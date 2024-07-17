@@ -12,14 +12,35 @@
   <!-- Import the component -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 
-  <!-- Use it like any other HTML element -->
-  <div>
-    <model-viewer src="fractal_design._meshify_c__-__pc_case.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-  </model-viewer>
+    <model-viewer src="rog_strix_x370-f.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+        <button class="Hotspot" slot="hotspot-2" data-position="205.23085024878608m 5.495982729730848m -20.887332916259766m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">CPU Goes Here</div>
+        </button><button class="Hotspot" slot="hotspot-3" data-position="199.9964544364185m -2.0666007860214313m -20.859218597412124m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Video Card Goes Here</div>
+        </button><button class="Hotspot" slot="hotspot-4" data-position="210.861951952511m -9.129830965399467m -20.612924575805664m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Storage Can Go Here</div>
+        </button><button class="Hotspot" slot="hotspot-5" data-position="210.02730507132566m 9.322502434713542m -21.009536743164055m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Memory Goes Here</div>
+        </button><button class="Hotspot" slot="hotspot-6" data-position="213.46798462260304m -5.257228878289194m -20.484861379358556m" data-normal="0.9999879595823382m 0m 0.004907207999682399m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Storage Can Go Here</div>
+        </button><button class="Hotspot" slot="hotspot-7" data-position="213.14085212417172m 4.230985262113062m -20.787982940673842m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Power Supply Connects to Here</div>
+        </button><button class="Hotspot" slot="hotspot-9" data-position="207.791724186124m 13.612036216288942m -20.935821533203132m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">CPU Fan(s) Connect Here</div>
+        </button><button class="Hotspot" slot="hotspot-13" data-position="197.84757377789836m -12.207102905845801m -20.956369400024414m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Case Connectors (Fans, Audio, USBs, etc.) Goes Down Here
+            </div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+
+    </model-viewer>
+
+
   
-    
-   </div>
+</body>
 </html>
