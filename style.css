@@ -5,10 +5,11 @@ html {
 }
 .backArrow{
 
-  width: 10%;
+  width: 7%;
   float: left;
   position: relative;
-  top:45%;
+  top:1%;
+  left:1%;
 
 
 }
