@@ -3,18 +3,49 @@ html {
   width: 100%;
 
 }
+h2{
+  color: #00565F;
+  text-align: center;
+  font-family: "MS Gothic";
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .backArrow{
 
-  width: 7%;
+  width: 6%;
   float: left;
   position: relative;
   top:1%;
   left:1%;
-
-
+}
+.format_text{
+  color: #002C30;
+  border: #002C30 3px solid;
+  margin-top:0;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-family: "MS Gothic";
+  text-align: center;
+  text-wrap: balance;
+  background-color: #e5e3d9;
+  opacity: .7;
 }
 model-viewer{
-   min-height:100vh; 
+  min-height:100vh; 
   min-width:100vw;
 }
 .Hotspot{
