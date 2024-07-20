@@ -12,7 +12,7 @@ h2{
   -moz-animation: fadeIn 5s;
   -o-animation: fadeIn 5s;
   -ms-animation: fadeIn 5s;
-
+  font-size: 32px;
 }
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -21,23 +21,23 @@ h2{
 
 .backArrow{
 
-  width: 6%;
+  width: 5%;
   float: left;
-  position: relative;
-  top:1%;
-  left:1%;
 }
+
 .format_text{
   color: #002C30;
-  border: #002C30 3px solid;
+ 
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px;
   margin-top:0;
-  margin-left: 7.5%;
+  margin-left: 5.5%;
   margin-right: 3%;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 2.3vmax;
+  font-size: 2vmax;
   font-family: "MS Gothic";
   text-align: center;
   text-wrap: balance;
@@ -48,40 +48,58 @@ model-viewer{
   min-height:100vh; 
   min-width:100vw;
 }
-.Hotspot{
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  border: none;
-  background-color: #e5e3d9;
-  box-sizing: border-box;
-  pointer-events: none;
-  font-size: 14px;
-}
 .Hotspot a{
   pointer-events: all;
   font-weight: bold;
-  font-size: 16px;
-}
-.Hotspot[slot="hotspot-hand"]{
-  --min-hotspot-opacity: 0;
-  background-color: red;
+  font-size: 24px;
 }
 
-.Hotspot[slot="hotspot-foot"]:not([data-visible]) {
-  background-color: transparent;
-  border: 3px solid blue;
-}
 
+.Hotspot{
+  opacity: 1;
+  transform: translateY(-50%);
+  background: rgb(255, 255, 255);
+  border-radius: 32px;
+  border: 3px #002C30 solid;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 2px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+  pointer-events: none;
+}
 .HotspotAnnotation{
-  background-color: #e5e3d9;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;
+  color: #002C30;
+  display: block;
+  font-family: "MS Gothic", Helvetica Neue, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  left: calc(100% + .4em);
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.3em .5em;
   position: absolute;
   transform: translate(10px, 10px);
-  border-radius: 10px;
-  padding: 10px;
+  width: max-content;
 }
+
+.Hotspot > * {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+.Hotspot:not([data-visible]) {
+  background-color: transparent;
+  border: 3px solid white;
+}
+
 /* This keeps child nodes hidden while the element loads */
 :not(:defined) > * {
   display: none;
 }
+
