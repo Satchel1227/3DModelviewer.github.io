@@ -54,9 +54,15 @@ model-viewer{
   font-size: 2.9vmin;
 }
 
+.Hotspot:not([data-visible]) {
+  background-color: transparent;
+  border: 3px solid white;
+}
+.Hotspot{
+  --min-hotspot-opacity: 0;
+}
 
 .Hotspot{
-  opacity: 1;
   transform: translateY(-50%);
   background: rgb(255, 255, 255);
   border-radius: 32px;
@@ -93,10 +99,7 @@ model-viewer{
   opacity: 1;
   transform: translateY(-50%);
 }
-.Hotspot:not([data-visible]) {
-  background-color: transparent;
-  border: 3px solid white;
-}
+
 
 /* This keeps child nodes hidden while the element loads */
 :not(:defined) > * {
